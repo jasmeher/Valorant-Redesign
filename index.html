@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VALORANT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.1.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+
+    <script
+      src="https://kit.fontawesome.com/883b3a7344.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/lib/jquery.bez.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"
+      integrity="sha512-2cbsQGdowNDPcKuoBd2bCcsJky87Mv0LEtD/nunJUgk6MOYTgVMGihS/xCEghNf04DPhNiJ4DZw5BxDd1uyOdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="company-logo-loader">
+        <a href="#" class="text-reset">
+          <svg
+            version="1.1"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#D13639"
+            viewBox="0 0 110 35"
+          >
+            <path
+              d="M17.8 31.7l-1.6-4.1 15.4.8-.7 6.6zM21.5 0L0 10.2l3.3 15.3h4.4l-.7-11 .6-.2 2.7 11.2h4.5l-.1-13.4.6-.2 2.3 13.6h4.9l1.1-16.1.7-.3 1.2 16.4h6.3l2.3-22.4zm84.9 31.2l-6.1-1v-.8l5.9-.2-.1-1.5h-7.5l-.4 3.8 6.2 1.1v.7l-6.5.3-.2 1.4h9.1l-.4-3.8zM48 30.6l-.1 1.4 2.2.1v1.4l-4.7-.1.2-4.1 6.4-.1-.1-1.5h-8.3l-.7 7.3h9.4l-.2-4.5-4.1.1zm39.9 2.7V32l4.4-.1v-1.4l-4.5-.1v-1.3l5.9-.1v-1.5h-8l-.2 7.5h8.4l-.1-1.5-5.9-.2zM81.5 35l-.8-7.4h-2.1l-3.1 3.5-3.1-3.5h-2.1l-.7 7.4h2.5l.2-4.8 3.2 3.3 3.2-3.3.2 4.8zM70.9.5h-5l-.4 22.9h6zm20.4 0H75.7l-.6 22.9h17.3L91.3.5zm-4.8 17.9l-5.5.2-.3-13.5 5.8.2v13.1zM110 5.5l-.6-5H94l.2 4.4 4.9.2.5 18.3h6.1l-1.8-18.1zM56.1 23.4h6.6l-4.3-10.3 3.4-1.9L59.5.5H42.7l-.6 5 3.8-.1-1.8 18.1H50l.2-5.8 4.2-2.3 1.7 8zM50.5 5.1l4.8-.1.6 4.6-5.6 2.6.2-7.1zm13 29.9H66l-2-7.4h-6L56 35h2.5l.4-1.9 4.1.1.5 1.8zm-4.2-3.3l.5-2.4 2.4-.1.5 2.4-3.4.1z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="game-logo-loader">
+        <svg
+          viewBox="0 0 1035 500"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="f000000ff"></g>
+          <g id="ff4655ff">
+            <path
+              fill="#fff"
+              opacity="1.00"
+              d=" M 245.44 4.65 C 248.61 2.76 250.63 6.58 252.34 8.59 C 362.37 146.24 472.53 283.79 582.55 421.44 C 584.81 423.40 583.10 427.59 580.05 427.14 C 527.37 427.20 474.68 427.16 422.00 427.16 C 417.78 427.21 413.74 425.11 411.15 421.82 C 356.49 353.53 301.86 285.21 247.20 216.91 C 244.88 214.15 243.68 210.58 243.83 206.99 C 243.83 141.01 243.85 75.02 243.81 9.04 C 243.84 7.48 243.78 5.46 245.44 4.65 Z"
+            />
+            <path
+              fill="#fff"
+              opacity="1.00"
+              d=" M 754.32 4.33 C 756.57 3.48 759.05 5.56 758.72 7.92 C 758.80 73.93 758.71 139.94 758.76 205.95 C 758.91 209.69 758.09 213.56 755.66 216.50 C 739.05 237.28 722.42 258.05 705.81 278.82 C 703.04 282.42 698.51 284.41 693.98 284.18 C 641.65 284.13 589.31 284.21 536.98 284.14 C 533.89 284.62 532.13 280.45 534.41 278.44 C 606.98 187.65 679.61 96.89 752.22 6.12 C 752.77 5.34 753.47 4.74 754.32 4.33 Z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+      <div class="container-fluid">
+        <div
+          class="logo-container animate__animated animate__fadeInLeft animate__delay-2s"
+        >
+          <div class="company-logo">
+            <a href="#" class="text-reset">
+              <svg
+                version="1.1"
+                baseProfile="full"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#D13639"
+                viewBox="0 0 110 35"
+              >
+                <path
+                  d="M17.8 31.7l-1.6-4.1 15.4.8-.7 6.6zM21.5 0L0 10.2l3.3 15.3h4.4l-.7-11 .6-.2 2.7 11.2h4.5l-.1-13.4.6-.2 2.3 13.6h4.9l1.1-16.1.7-.3 1.2 16.4h6.3l2.3-22.4zm84.9 31.2l-6.1-1v-.8l5.9-.2-.1-1.5h-7.5l-.4 3.8 6.2 1.1v.7l-6.5.3-.2 1.4h9.1l-.4-3.8zM48 30.6l-.1 1.4 2.2.1v1.4l-4.7-.1.2-4.1 6.4-.1-.1-1.5h-8.3l-.7 7.3h9.4l-.2-4.5-4.1.1zm39.9 2.7V32l4.4-.1v-1.4l-4.5-.1v-1.3l5.9-.1v-1.5h-8l-.2 7.5h8.4l-.1-1.5-5.9-.2zM81.5 35l-.8-7.4h-2.1l-3.1 3.5-3.1-3.5h-2.1l-.7 7.4h2.5l.2-4.8 3.2 3.3 3.2-3.3.2 4.8zM70.9.5h-5l-.4 22.9h6zm20.4 0H75.7l-.6 22.9h17.3L91.3.5zm-4.8 17.9l-5.5.2-.3-13.5 5.8.2v13.1zM110 5.5l-.6-5H94l.2 4.4 4.9.2.5 18.3h6.1l-1.8-18.1zM56.1 23.4h6.6l-4.3-10.3 3.4-1.9L59.5.5H42.7l-.6 5 3.8-.1-1.8 18.1H50l.2-5.8 4.2-2.3 1.7 8zM50.5 5.1l4.8-.1.6 4.6-5.6 2.6.2-7.1zm13 29.9H66l-2-7.4h-6L56 35h2.5l.4-1.9 4.1.1.5 1.8zm-4.2-3.3l.5-2.4 2.4-.1.5 2.4-3.4.1z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="game-logo">
+            <svg
+              viewBox="0 0 1035 500"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="f000000ff"></g>
+              <g id="ff4655ff">
+                <path
+                  fill="#fff"
+                  opacity="1.00"
+                  d=" M 245.44 4.65 C 248.61 2.76 250.63 6.58 252.34 8.59 C 362.37 146.24 472.53 283.79 582.55 421.44 C 584.81 423.40 583.10 427.59 580.05 427.14 C 527.37 427.20 474.68 427.16 422.00 427.16 C 417.78 427.21 413.74 425.11 411.15 421.82 C 356.49 353.53 301.86 285.21 247.20 216.91 C 244.88 214.15 243.68 210.58 243.83 206.99 C 243.83 141.01 243.85 75.02 243.81 9.04 C 243.84 7.48 243.78 5.46 245.44 4.65 Z"
+                />
+                <path
+                  fill="#fff"
+                  opacity="1.00"
+                  d=" M 754.32 4.33 C 756.57 3.48 759.05 5.56 758.72 7.92 C 758.80 73.93 758.71 139.94 758.76 205.95 C 758.91 209.69 758.09 213.56 755.66 216.50 C 739.05 237.28 722.42 258.05 705.81 278.82 C 703.04 282.42 698.51 284.41 693.98 284.18 C 641.65 284.13 589.31 284.21 536.98 284.14 C 533.89 284.62 532.13 280.45 534.41 278.44 C 606.98 187.65 679.61 96.89 752.22 6.12 C 752.77 5.34 753.47 4.74 754.32 4.33 Z"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbar-list"
+          aria-controls="navbar-list"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons">menu</span>
+        </button>
+
+        <div class="offcanvas offcanvas-end bg-dark" id="navbar-list">
+          <div class="offcanvas-header">
+            <div class="game-logo">
+              <svg
+                viewBox="0 0 1035 500"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="f000000ff"></g>
+                <g id="ff4655ff">
+                  <path
+                    fill="#fff"
+                    opacity="1.00"
+                    d=" M 245.44 4.65 C 248.61 2.76 250.63 6.58 252.34 8.59 C 362.37 146.24 472.53 283.79 582.55 421.44 C 584.81 423.40 583.10 427.59 580.05 427.14 C 527.37 427.20 474.68 427.16 422.00 427.16 C 417.78 427.21 413.74 425.11 411.15 421.82 C 356.49 353.53 301.86 285.21 247.20 216.91 C 244.88 214.15 243.68 210.58 243.83 206.99 C 243.83 141.01 243.85 75.02 243.81 9.04 C 243.84 7.48 243.78 5.46 245.44 4.65 Z"
+                  />
+                  <path
+                    fill="#fff"
+                    opacity="1.00"
+                    d=" M 754.32 4.33 C 756.57 3.48 759.05 5.56 758.72 7.92 C 758.80 73.93 758.71 139.94 758.76 205.95 C 758.91 209.69 758.09 213.56 755.66 216.50 C 739.05 237.28 722.42 258.05 705.81 278.82 C 703.04 282.42 698.51 284.41 693.98 284.18 C 641.65 284.13 589.31 284.21 536.98 284.14 C 533.89 284.62 532.13 280.45 534.41 278.44 C 606.98 187.65 679.61 96.89 752.22 6.12 C 752.77 5.34 753.47 4.74 754.32 4.33 Z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-animate">
+              <li
+                class="nav-item dropdown animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GAME INFO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a class="nav-link active" aria-current="page" href="#"
+                  >MEDIA</a
+                >
+              </li>
+              <li
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a class="nav-link active" aria-current="page" href="#">NEWS</a>
+              </li>
+              <li
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a class="nav-link active" aria-current="page" href="#"
+                  >LEADERBOARDS</a
+                >
+              </li>
+              <li
+                class="nav-item dropdown animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SUPPORT
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item dropdown animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  OUR SOCIALS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a class="nav-link active" aria-current="page" href="#"
+                  >ESPORTS</a
+                >
+              </li>
+              <li
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+              >
+                <a class="nav-link active" aria-current="page" href="#"
+                  >MERCH</a
+                >
+              </li>
+            </ul>
+
+            <button
+              class="cta-nav animate__animated animate__fadeInDown animate__delay-2s"
+            >
+              PLAY NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header-section">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-7 banner-img">
+            <div class="banner-text">
+              <h3 class="heading-3-banner">
+                A 5v5 character-based tactical shooter
+              </h3>
+              <div class="game-banner-logo">
+                <a href="#" class="text-reset">
+                  <svg viewBox="0 0 690 98.9">
+                    <path
+                      d="M615.11 19.15h24.69l.08 75.59c0 .97.79 1.77 1.77 1.77l14.14-.01c.98 0 1.77-.79 1.77-1.77l-.08-75.58h30.96c.91 0 1.43-1.06.85-1.77l-10.6-13.26a4.68 4.68 0 00-3.65-1.76h-59.93c-.98 0-1.77.79-1.77 1.77v13.26c0 .96.79 1.76 1.77 1.76M19.25 94.75L91.67 4.13c.57-.71.06-1.77-.85-1.77H72.71c-1.42 0-2.77.65-3.65 1.76L17.68 68.4V4.12c0-.98-.79-1.77-1.77-1.77H1.77C.79 2.35 0 3.14 0 4.12v90.62c0 .98.79 1.77 1.77 1.77H15.6c1.42 0 2.76-.65 3.65-1.76m51.06 0l24.91-31.17 24.91 31.17a4.685 4.685 0 003.66 1.76h13.83c.98 0 1.77-.79 1.77-1.77V4.12c0-.97-.79-1.77-1.77-1.77h-11.6c-2.84 0-5.53 1.29-7.31 3.51L47.69 94.73c-.57.71-.06 1.77.85 1.77h18.11c1.43.01 2.77-.64 3.66-1.75m51.39-66.21v41.75l-16.68-20.87 16.68-20.88zm404.37 66.19L453.65 4.11A4.68 4.68 0 00450 2.35h-13.84c-.98 0-1.77.79-1.77 1.77v90.62c0 .98.79 1.77 1.77 1.77h13.83c1.42 0 2.77-.65 3.65-1.76l24.91-31.17 24.91 31.17a4.68 4.68 0 003.65 1.76h18.11c.91 0 1.42-1.06.85-1.78m-57.33-45.31L452.05 70.3V28.54l16.69 20.88zM269.45 0c-27.3 0-49.43 22.13-49.43 49.43s22.13 49.43 49.43 49.43 49.43-22.13 49.43-49.43C318.89 22.13 296.75 0 269.45 0m0 82.06c-17.54 0-31.75-14.61-31.75-32.63 0-18.02 14.21-32.64 31.75-32.64S301.2 31.4 301.2 49.43c.01 18.02-14.21 32.63-31.75 32.63M583.38 4.12V68.4L532 4.11a4.68 4.68 0 00-3.65-1.76H514.5c-.97 0-1.77.79-1.77 1.77v43.67c0 1.06.36 2.09 1.03 2.92l14.71 18.41c.65.81 1.95.35 1.95-.68v-38l51.39 64.31a4.68 4.68 0 003.65 1.76h13.83c.98 0 1.77-.79 1.77-1.77V4.12c0-.97-.79-1.77-1.77-1.77h-14.14c-.98 0-1.77.8-1.77 1.77M410.62 23.76V4.12c0-.98-.79-1.77-1.77-1.77h-72.37c-.98 0-1.77.79-1.77 1.77v90.62c0 .98.79 1.77 1.77 1.77h14.14c.98 0 1.77-.79 1.77-1.77V19.16h40.55l-27.37 34.26c-.51.64-.51 1.56 0 2.21l31.27 39.13a4.68 4.68 0 003.65 1.76h18.11c.91 0 1.42-1.06.85-1.77l-32.14-40.21 22.28-27.84c.66-.85 1.03-1.88 1.03-2.94M162.39 96.51h41.96c1.42 0 2.77-.65 3.65-1.76l10.6-13.27c.57-.71.06-1.77-.85-1.77H178.3V4.12c0-.98-.79-1.77-1.77-1.77h-14.14c-.98 0-1.77.79-1.77 1.77v90.62c0 .97.8 1.77 1.77 1.77"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <button class="cta-banner">PLAY FREE</button>
+            </div>
+          </div>
+          <div class="col-5 banner-char">
+            <div class="char-container">
+              <img
+                src="Images/reyna.png"
+                alt=""
+                class="img-fluid h-100"
+                id="char-banner"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="latest-news">
+      <h1 class="latest-news-heading-bg">NEWS</h1>
+      <div class="container h-100 row-news">
+        <div class="row w-100">
+          <div class="col-4 news-card">
+            <a href="#" class="text-reset">
+              <div class="img-container">
+                <img src="Images/news-1.webp" alt="" class="img-fluid" />
+              </div>
+              <div class="meta lead">
+                <p class="meta-date">22/03/2022</p>
+                <p class="meta-category">GAME UPDATES</p>
+              </div>
+              <h1 class="heading-news">VALORANT PATCH NOTES 4.04</h1>
+            </a>
+          </div>
+
+          <div class="col-4 news-card">
+            <a href="#" class="text-reset">
+              <div class="img-container">
+                <img src="Images/news-2.webp" alt="" class="img-fluid" />
+              </div>
+              <div class="meta lead">
+                <p class="meta-date">08/03/2022</p>
+                <p class="meta-category">dev</p>
+              </div>
+              <h1 class="heading-news">
+                performance boost: valorant's global invalidation
+              </h1>
+            </a>
+          </div>
+
+          <div class="col-4 news-card">
+            <a href="#" class="text-reset">
+              <div class="img-container">
+                <img src="Images/news-3.webp" alt="" class="img-fluid" />
+              </div>
+              <div class="meta lead">
+                <p class="meta-date">05/03/2022</p>
+                <p class="meta-category">announcements</p>
+              </div>
+              <h1 class="heading-news">
+                Riot is Donating Battle Pass Sales to Humanitarian Relief in
+                Eastern Europe
+              </h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ep-latest">
+      <div class="ep-container">
+        <div class="ep-data-container">
+          <p class="ep-name">EPISODE_4//ACT I//YR 2</p>
+          <h1 class="ep-heading">Disruption</h1>
+          <button class="cta-banner">ACT II OVERVIEW</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gameplay">
+      <h1 class="heading-game">WE ARE VALORANT</h1>
+      <div class="container-gameplay">
+        <div class="container h-100 text-gameplay">
+          <div class="row row-gameplay-text">
+            <div class="col-6 text-tagline">
+              <h3 class="tagline">DEFY THE LIMITS</h3>
+              <p class="game-desc">
+                Blend your style and experience on a global, competitive stage.
+                You have 13 rounds to attack and defend your side using sharp
+                gunplay and tactical abilities. And, with one life per-round,
+                you'll need to think faster than your opponent if you want to
+                survive. Take on foes across Competitive and Unranked modes as
+                well as Deathmatch and Spike Rush.
+              </p>
+            </div>
+            <div class="col-6 video">
+              <div class="video-overlay-container">
+                <p class="video-gameplay-overlay-text">Gameplay</p>
+                <button class="video-play-bttn">
+                  <svg viewBox="0 0 72 72">
+                    <path
+                      fill="none"
+                      stroke="#fff"
+                      d="M33.5 34.5v-5l8 6v2l-8 6v-5m28-29l-7 7m-38 38l-7 7"
+                    ></path>
+                  </svg>
+                </button>
+                <video
+                  src="Images/gameplay.mp4"
+                  preload="true"
+                  class="img-fluid video-gameplay"
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agents">
+      <div class="container-fluid h-100">
+        <div class="row h-100" style="max-height: 100%">
+          <div class="col-6 agents-pic h-100">
+            <img src="Images/your-agents.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 text-tagline">
+            <h1 class="headline-agents">your agents</h1>
+            <h3 class="tagline">CREATIVITY IS YOUR GREATEST WEAPON.</h3>
+            <p class="game-desc">
+              More than guns and bullets, you’ll choose an Agent armed with
+              adaptive, swift, and lethal abilities that create opportunities to
+              let your gunplay shine. No two Agents play alike, just as no two
+              highlight reels will look the same.
+            </p>
+            <button
+              class="cta-banner"
+              style="margin-left: auto; margin-right: auto"
+            >
+              VIEW ALL AGENTS
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
