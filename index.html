@@ -42,6 +42,13 @@
       crossorigin="anonymous"
     ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flexMenu/1.6.2/flexmenu.min.js"
+      integrity="sha512-e18S3YHGYlBADZVH190igt8W8/bUj5ff7SlCf5X+5giWuOp7d4tWoWMf6NFRjVmsLthr7X+nTY3aLIOJVATCVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/lib/jquery.bez.min.js"></script>
 
     <script
@@ -190,9 +197,9 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-animate">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-animate navbar">
               <li
-                class="nav-item dropdown animate__animated animate__fadeInDown animate__delay-2s"
+                class="nav-item dropdown priority animate__animated animate__fadeInDown animate__delay-2s"
               >
                 <a
                   class="nav-link dropdown-toggle"
@@ -214,24 +221,18 @@
                 </ul>
               </li>
               <li
-                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s priority"
               >
                 <a class="nav-link active" aria-current="page" href="#"
                   >MEDIA</a
                 >
               </li>
               <li
-                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
+                class="nav-item animate__animated animate__fadeInDown animate__delay-2s priority"
               >
                 <a class="nav-link active" aria-current="page" href="#">NEWS</a>
               </li>
-              <li
-                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
-              >
-                <a class="nav-link active" aria-current="page" href="#"
-                  >LEADERBOARDS</a
-                >
-              </li>
+
               <li
                 class="nav-item dropdown animate__animated animate__fadeInDown animate__delay-2s"
               >
@@ -276,20 +277,6 @@
                   </li>
                 </ul>
               </li>
-              <li
-                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
-              >
-                <a class="nav-link active" aria-current="page" href="#"
-                  >ESPORTS</a
-                >
-              </li>
-              <li
-                class="nav-item animate__animated animate__fadeInDown animate__delay-2s"
-              >
-                <a class="nav-link active" aria-current="page" href="#"
-                  >MERCH</a
-                >
-              </li>
             </ul>
 
             <button
@@ -321,7 +308,9 @@
                   </svg>
                 </a>
               </div>
-              <button class="cta-banner">PLAY FREE</button>
+              <div class="cta-button">
+                <button class="cta-banner">PLAY FREE</button>
+              </div>
             </div>
           </div>
           <div class="col-5 banner-char">
@@ -398,7 +387,9 @@
         <div class="ep-data-container">
           <p class="ep-name">EPISODE_4//ACT I//YR 2</p>
           <h1 class="ep-heading">Disruption</h1>
-          <button class="cta-banner">ACT II OVERVIEW</button>
+          <div class="cta-button" id="ep-cta">
+            <button class="cta-banner">ACT II OVERVIEW</button>
+          </div>
         </div>
       </div>
     </section>
@@ -464,12 +455,12 @@
               let your gunplay shine. No two Agents play alike, just as no two
               highlight reels will look the same.
             </p>
-            <button
-              class="cta-banner"
+            <div
+              class="cta-button"
               style="margin-left: auto; margin-right: auto"
             >
-              VIEW ALL AGENTS
-            </button>
+              <button class="cta-banner">VIEW ALL AGENTS</button>
+            </div>
           </div>
         </div>
       </div>
@@ -486,12 +477,12 @@
               Purpose-built for team strategies, spectacular plays, and clutch
               moments. Make the play others will imitate for years to come.
             </p>
-            <button
-              class="cta-banner"
+            <div
+              class="cta-button"
               style="margin-left: auto; margin-right: auto"
             >
-              VIEW ALL MAPS
-            </button>
+              <button class="cta-banner">VIEW ALL MAPS</button>
+            </div>
           </div>
           <div class="col-6 maps-pic h-100"></div>
         </div>

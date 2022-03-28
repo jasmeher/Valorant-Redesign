@@ -13,9 +13,27 @@ $(document).ready(function () {
         .delay(200)
         .css("opacity", "1");
     }
+
+    if (scrollPosition > 900) {
+      $(".ep-name")
+        .addClass("animate__animated animate__slideInUp")
+        .delay(200)
+        .css("opacity", "1");
+
+      $(".ep-heading")
+        .delay(800)
+        .addClass("animate__animated animate__slideInUp")
+        .css("opacity", "1");
+
+      $("#ep-cta")
+        .delay(800)
+        .addClass("animate__animated animate__slideInUp")
+        .css("opacity", "1");
+    }
   });
   choosePic();
   $(".video-gameplay").trigger("play");
+  $("#navbar").flexMenu();
 });
 
 paceOptions = {
