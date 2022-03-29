@@ -1,0 +1,74 @@
+@media screen and (max-width: 960px) {
+  .banner-char {
+    display: none;
+  }
+
+  .game-banner-logo {
+    width: 30rem;
+  }
+
+  .row-news-cs {
+    justify-content: flex-start;
+  }
+
+  .ep-container {
+    width: 100%;
+  }
+
+  .ep-heading {
+    font-size: 3rem;
+  }
+
+  .ep-name {
+    font-size: 1.5rem;
+  }
+
+  #gameplay {
+    min-height: 100%;
+  }
+
+  .text-tagline {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .tagline,
+  .headline-agents,
+  .game-desc-2 {
+    text-align: center;
+  }
+
+  .tagline,
+  .game-desc,
+  .headline-agents {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .heading-game {
+    display: none;
+  }
+
+  .maps-pic {
+    background: linear-gradient(to left, #00000000, #00000000),
+      url(../Images/your-maps.webp) no-repeat center center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ep-heading {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    width: 25rem;
+  }
+
+  .cta-banner {
+    width: 23rem;
+  }
+
+  .row-gameplay-text::before {
+    display: none;
+  }
+}
