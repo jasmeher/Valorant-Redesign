@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.page-container {
+  overflow-x: hidden;
+}
+
 .company-logo-loader {
   width: 20rem;
   position: absolute;
@@ -309,11 +313,19 @@ a {
   margin-right: 2rem;
 }
 
+.img-container {
+  width: 100%;
+  overflow: hidden;
+  height: 27.5rem;
+}
+
 .row-news-cs {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .meta {
